@@ -1,26 +1,20 @@
 import React, { useState } from "react";
-
-const TEST = ``;
-
-const textToASINs = text => {
-  const matcher = text.match(/(B[A-Z0-9]{9})/g);
-  return matcher && matcher.length
-    ? matcher
-        .filter(function(x, i, a) {
-          return a.indexOf(x) === i;
-        })
-        .join("\n")
-    : ["No ASINs Found in the Text"];
-};
+import textToASINs from "../lib/textToASINs";
 
 const textCenter = { textAlign: "center" };
+const column = { width: "49%", height: "200px", float: "left" };
 
 const Cleaner = () => {
-  const [text, setText] = useState(TEST);
+  const [text, setText] = useState("");
 
   const cleanText = e => {
     setText(e.target.value);
   };
+
+  let cleaned = textToASINs(text);
+  if (cleaned.length === 0) {
+    cleaned = "No ASINs Found in the Text";
+  }
 
   return (
     <div>
@@ -29,17 +23,13 @@ const Cleaner = () => {
         Paste Text on the LEFT - ASINs output on the right
       </h3>
       <textarea
-        style={{ width: "49%", height: "500px", float: "left" }}
+        style={column}
         value={text}
         placeholder="Paste a bunch of junky text here"
         onChange={cleanText}
       />
 
-      <textarea
-        style={{ width: "49%", height: "500px", float: "left" }}
-        value={textToASINs(text)}
-        disabled={true}
-      />
+      <textarea style={column} value={cleaned} disabled={true} />
     </div>
   );
 };
