@@ -23,7 +23,7 @@ const Cleaner = () => {
   }
 
   return (
-    <div>
+    <div style={{ maxWidth: "800px", margin: "auto" }}>
       <div style={{ textAlign: "center" }}>
         <label style={{ cursor: "pointer" }}>
           <input
