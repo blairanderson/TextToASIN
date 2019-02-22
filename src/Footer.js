@@ -16,6 +16,36 @@ const Footer = () => {
           100% Open Source
         </a>
       </small>
+      <br />
+      <div
+        style={{
+          position: "relative",
+          paddingBottom: "56.25%" /* 16:9 */,
+          paddingTop: "25px",
+          height: 0
+        }}
+      >
+        <video
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%"
+          }}
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source type="video/mp4" src={"/video/whatistext-to-asins.mp4"} />
+        </video>
+        <p>
+          Made this little tool, because i'm often juggling a ton of asins
+          throughout different tools, or sending them to different people.{" "}
+        </p>
+        <p>Also works great with fetching ASINs from a variation</p>
+      </div>
     </div>
   );
 };
