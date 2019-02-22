@@ -14,7 +14,7 @@ const Cleaner = () => {
   } else {
     let separator = "";
     if (commaSeparator) {
-      separator = ",";
+      separator = commaSeparator;
     }
     if (newLineSeparator) {
       separator = separator + "\n";
@@ -40,15 +40,27 @@ const Cleaner = () => {
         <br />
         <label style={{ cursor: "pointer" }}>
           <input
-            type="checkbox"
+            type="radio"
             onChange={e => {
-              setCommaSeparator(!commaSeparator);
+              setCommaSeparator(",");
             }}
-            checked={commaSeparator}
+            checked={commaSeparator === ","}
             name="comma"
             id="comma"
           />
           Comma Separator
+        </label>
+        <label style={{ cursor: "pointer" }}>
+          <input
+            type="radio"
+            onChange={e => {
+              setCommaSeparator("|");
+            }}
+            checked={commaSeparator === "|"}
+            name="pipe"
+            id="pipe"
+          />
+          Pipe Separator
         </label>
       </div>
       <textarea
@@ -65,7 +77,7 @@ const Cleaner = () => {
         onClick={e => {
           e.target.select();
         }}
-        readonly={true}
+        readOnly={true}
       />
     </div>
   );
