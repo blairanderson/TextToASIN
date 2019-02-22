@@ -6,9 +6,14 @@ const Header = () => {
   return (
     <div style={textCenter}>
       <h1>
-        <a href="https://getasins.netlify.com/">TEXT to ASINs</a>
+        <a
+          style={{ textDecoration: "none" }}
+          href="https://getasins.netlify.com/"
+        >
+          TEXT to ASIN
+        </a>
       </h1>
-      <h3>Paste Text on the LEFT - ASINs output on the right</h3>
+      <h3>Paste ANY Text - We parse out ASINs</h3>
     </div>
   );
 };

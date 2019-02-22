@@ -1,22 +1,43 @@
 import React, { useState } from "react";
 
 const textCenter = { clear: "both", textAlign: "center" };
+const CONTAINER = { margin: "auto", maxWidth: "800px" };
 
 const Footer = () => {
   return (
     <div style={textCenter}>
-      A tiny script built by{" "}
-      <a href="https://www.andersonassociates.net">Blair Anderson</a>.
-      <br />
-      <small>
-        <a
-          rel="nofollow noreferer"
-          href="https://github.com/blairanderson/TextToASIN/blob/master/README.md"
-        >
-          100% Open Source
-        </a>
-      </small>
-      <br />
+      <div>
+        A tiny script built by{" "}
+        <a href="https://www.andersonassociates.net">Blair Anderson</a>.
+        <br />
+        <small>
+          <a
+            rel="nofollow noreferer"
+            href="https://github.com/blairanderson/TextToASIN/blob/master/README.md"
+          >
+            100% Open Source
+          </a>
+        </small>
+      </div>
+      <div style={{ margin: "auto", maxWidth: "600px" }}>
+        <p>
+          We made this script because we are very often juggling a ton of ASINs
+          for different projects and putting them back into different tools or
+          sending them to clients.
+        </p>
+        <p>(works great with pulling ASINs from a variation)</p>
+      </div>
+
+      <Video />
+    </div>
+  );
+};
+
+export default Footer;
+
+const Video = () => {
+  return (
+    <div style={CONTAINER}>
       <div
         style={{
           position: "relative",
@@ -40,14 +61,7 @@ const Footer = () => {
         >
           <source type="video/mp4" src={"/video/whatistext-to-asins.mp4"} />
         </video>
-        <p>
-          Made this little tool, because i'm often juggling a ton of asins
-          throughout different tools, or sending them to different people.{" "}
-        </p>
-        <p>Also works great with fetching ASINs from a variation</p>
       </div>
     </div>
   );
 };
-
-export default Footer;
