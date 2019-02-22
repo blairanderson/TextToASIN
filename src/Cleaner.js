@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import textToASINs from "../lib/textToASINs";
+import textToASINs from "./textToASINs";
 
 const column = { width: "49%", height: "200px", float: "left" };
 
