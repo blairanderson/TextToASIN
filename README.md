@@ -1,4 +1,4 @@
-[Text to ASINs](https://6z7v52025n.codesandbox.io/) extracts Amazon ASINs from a large block of text.
+[Text to ASINs](https://getasins.netlify.com) extracts Amazon ASINs from a large block of text.
 
 [Developed 100% on CodeSandbox](https://codesandbox.io/s/github/blairanderson/TextToASIN)
 
