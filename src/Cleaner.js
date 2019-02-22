@@ -77,7 +77,7 @@ const Cleaner = () => {
         onClick={e => {
           e.target.select();
         }}
-        readonly={true}
+        readOnly={true}
       />
     </div>
   );
