@@ -7,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
+
         <h1 style={textCenter}>
           <a href="https://getasins.netlify.com/">TEXT to ASINs</a>
         </h1>
