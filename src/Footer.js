@@ -8,7 +8,7 @@ const Footer = () => {
     <div style={textCenter}>
       <div>
         A tiny script built by{" "}
-        <a href="https://www.andersonassociates.net">Blair Anderson</a>.
+        <a href="https://www.andersonassociates.net?ref=getasins">Blair Anderson</a>.
         <br />
         <small>
           <a
