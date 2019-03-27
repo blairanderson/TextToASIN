@@ -69,7 +69,6 @@ const Cleaner = () => {
         style={column}
         placeholder="Paste a bunch of junky text here"
         onChange={e => {
-          setHidden(false);
           setText(e.target.value);
         }}
       />
