@@ -6,8 +6,8 @@ const column = { width: "49%", minHeight: "200px", float: "left" };
 
 const Cleaner = () => {
   const [text, setText] = useState("");
-  const [newLineSeparator, setNewLineSeparator] = useState(true);
-  const [commaSeparator, setCommaSeparator] = useState(false);
+  const [newLineSeparator, setNewLineSeparator] = useState(false);
+  const [commaSeparator, setCommaSeparator] = useState("|");
   const ASINs = textToASINs(text);
   let cleaned;
   if (ASINs.length === 0) {
