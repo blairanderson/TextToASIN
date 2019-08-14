@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const textCenter = { clear: "both", textAlign: "center" };
 const CONTAINER = { margin: "auto", maxWidth: "800px" };
@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div style={textCenter}>
       <div>
-        A tiny script built by{" "}
-        <a href="https://www.andersonassociates.net?ref=getasins">Blair Anderson</a>.
+        A regex script built by{" "}
+        <a href="https://www.blairanderson.co?ref=getasins">Blair Anderson</a>.
         <br />
         <small>
           <a

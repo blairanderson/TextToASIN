@@ -39,29 +39,41 @@ const Cleaner = () => {
           New Line Separator
         </label>
         <br />
-        <label style={{ cursor: "pointer" }}>
+        <label htmlFor="comma-sep" style={{ cursor: "pointer" }}>
           <input
             type="radio"
             onChange={e => {
               setCommaSeparator(",");
             }}
             checked={commaSeparator === ","}
-            name="comma"
-            id="comma"
+            name="comma-sep"
+            id="comma-sep"
           />
           Comma Separator
         </label>
-        <label style={{ cursor: "pointer" }}>
+        <label htmlFor="pipe-sep" style={{ cursor: "pointer" }}>
           <input
             type="radio"
             onChange={e => {
               setCommaSeparator("|");
             }}
             checked={commaSeparator === "|"}
-            name="pipe"
-            id="pipe"
+            name="pipe-sep"
+            id="pipe=sep"
           />
           Pipe Separator
+        </label>
+        <label htmlFor="false-sep" style={{ cursor: "pointer" }}>
+          <input
+            type="radio"
+            onChange={e => {
+              setCommaSeparator(false);
+            }}
+            checked={commaSeparator === false}
+            name="false-sep"
+            id="false-sep"
+          />
+          Blank Separator
         </label>
       </div>
       <textarea
