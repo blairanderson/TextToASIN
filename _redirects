@@ -1,0 +1,5 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect default Netlify subdomain to primary domain
+http://getasins.netlify.com/* https://asins.gorillawrangler.com/:splat 301!
+https://getasins.netlify.com/* https://asins.gorillawrangler.com/:splat 301!
