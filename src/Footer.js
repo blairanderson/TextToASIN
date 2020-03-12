@@ -8,7 +8,7 @@ const Footer = () => {
     <div style={textCenter}>
       <div>
         A regex script built by{" "}
-        <a href="https://www.blairanderson.co?ref=getasins">Blair Anderson</a>.
+        <a href="https://www.gorillawrangler.com?ref=getasins">Gorilla Wranglers</a>.
         <br />
         <small>
           <a
