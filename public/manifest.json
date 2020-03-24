@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ASIN Extractor from Text Blobs",
+  "name": "Extracts ASINs from any type of text, mostly used with HTML and scraping",
   "icons": [
     {
       "src": "favicon.ico",
